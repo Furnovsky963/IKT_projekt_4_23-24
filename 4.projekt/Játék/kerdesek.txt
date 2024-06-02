@@ -1,0 +1,112 @@
+Melyik évben adták ki az aranybullát?
+1222
+1223
+1122
+Milyen kiterjesztést használunk a python-hoz?
+.py
+.css
+.pi
+Mikortól számítjuk az I. Ipari forradalmat?
+1770
+1777
+1807
+Melyik Budapest legnagyobb kerülete?
+XVII kerület
+XXII kerület
+XIII kerület
+Fejezd be a mondatot: "A kutyából nem lesz ..."
+szalonna
+kolbász
+szalámi
+Melyik ezek közül NEM egy AI?
+Omegle
+Chat GPT
+Gemini
+Ki irta a "János Vitéz"-t?
+Petőfi Sándor
+Vörösmarty Mihály
+Varró Dániel
+Ki irta a "Toldi Miklós"-t?
+Arany János
+Benedek Elek
+Fekete István
+Eredménye: 8+2(2+2)?
+16
+40
+4
+Melyik évben jött ki a Windows 7?
+2009. október 22.
+2008. november 18.
+2010. január 6.
+Hogy hívják Sakkban azt a szituációt, amikor egy erősebb figura nem tud elmozdulni, mert megakadályozza a királyt, hogy sakkabn legyen?
+pin
+skewer
+sanc
+Melyik betűt használjuk fájlíráshoz a py-ban?
+'w'
+'r'
+'a'
+Hogyan hivatkozunk a 'eredmeny' osztályhoz css-ben?
+.eredmeny
+#eredmeny
+.eredmény
+Mikor van egy másodfokú egyneletnek 2 megoldása?
+D > 0
+D = 0
+D < 0
+Mikor van egy másodfokú egyneletnek 1 megoldása?
+D = 0
+D > 0
+D < 0
+Mikor nincs egy másodfokú egyneletnek megoldása?
+D < 0
+D = 0
+D > 0
+Az alábbiak közül melyik NEM ciklus?
+def
+for
+while
+Mire használjuk a strip() függvényt?
+A txt fájlban tárolt szavak/számok végéről levegye a szóközöket.
+A szavak közti vesszőt, pontosvesszőt stb. eltávolítsa.
+Nem tudom, csak használni kell a fájlolvasáshoz...
+Milyen fájlkiterkesztést használ a Windows telepítő?
+.msi
+.exe
+.dll
+Mikor alapították a Discordot?
+2015 május
+2012 október
+2014 január
+Szabad-e a elemkijelölő/osztályjelölő nevét számmal kezdeni (HTML)?
+nem
+igen
+általában nem
+Az alábbiak közül melyik a legrégebbi?
+CD
+Blu-Ray
+SSD
+Mi a betűritkítás css-ben?
+letter-spacing
+font-variant
+text-decoration
+Melyik függvénnyel olvasunk be egy sort egy fájlban?
+file.readline()
+file.readlines()
+file.writeline()
+Hány ember készítette ezt a projektet?
+2
+4
+3
+Melyik paranccsal telepítünk le a termcolor könyvtárat, ha sima pythonod van?
+pip install termcolor
+pip3 install termcolor
+pip uninstall termcolor
+Melyik bootstrap-et használjuk?
+Bootstrap 5
+Bootstrap 3
+Bootstrap 4
+Mi az .iso fájlkiterjesztés?
+Lemezképfájl
+Alkalmazás
+Rendszerinfo fájl
