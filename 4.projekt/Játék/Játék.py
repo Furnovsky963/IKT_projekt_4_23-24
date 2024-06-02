@@ -77,7 +77,7 @@ def game_start(game_pt):
                 test = credits(game_completed=game_pt,elso_jatek=pontszam_elso, masodik_jatek=pontszam_masodik, harmadik_jatek=pontszam_harmadik)
         else:
             cl()
-            write('Kérlek, a felsoroltak sorszámát írd be a választáshoz!\n','red')
+            write('Kérjük, a felsorolt sorszámok közül írj be egyet!\n','red')
             t.sleep(0.2)
             game_start(game_pt=game_completed)
 
@@ -87,7 +87,7 @@ def QnA(game_pt: float, already_gave_point: int):
     pontszam = 0
     
     cl()
-    write(f'Üdvözöllek, {név}!\n\n- Ebben a játékban kérdésekre kell válaszolnod, hogy tovább juss.\n- Összesen {life} életed van.\nJó szórakozást!','white')
+    write(f'Üdvözlünk, {név}!\n\n- Ebben a játékban kérdésekre kell válaszolnod, hogy továbbjuss.\n- Összesen {life} életed van.\nSok sikert!','white')
     t.sleep(1.5)
     cl()
     
@@ -151,7 +151,7 @@ def QnA(game_pt: float, already_gave_point: int):
             return game_pt, pontszam
         
     else:
-        write("Úgy látszik nem sikerült megcsinálni, majd máskor jobb lesz!","yellow")
+        write("Úgy látszik nem sikerült teljesítened a játékot, de majd máskor jobban sikerül!","red")
         t.sleep(0.5)
         cl()
         return game_pt, pontszam
@@ -163,8 +163,8 @@ def BasicChess(game_pt: float, already_gave_point: int):
     chess_puzzle = []
     cl()
     t.sleep(1)
-    write(f'Üdvözöllek a második játékunkban! Remélem, valamennyire tudsz sakkozni... Ebben a játékban sakkfeladványokat kell megoldanod. Igyekezz minél többet megoldani!','white')
-    write('\nJelzések:\nBábu: FEHÉR/fekete \nKirály: K/k\nKirálynő: Q/q\nBástya: R/r\nHuszár: N/n\nFutó: B/b\nGyalog: P/p\nfehér gyalogból királynő lesz pl: a8=Q','white')
+    write(f'Üdvözlünk a második játékunkban! Tudsz valamennyire sakkozni, ugye? Ebben a játékban sakkfeladványokat kell megoldanod. Igyekezz minél többet megoldani! Sok szerencsét!','white')
+    write('\nJelzések:\nBábu: FEHÉR (jelzés nagy betűvel) /fekete (jelzés kis betűvel) \nKirály: K/k\nKirálynő: Q/q\nBástya: R/r\nHuszár: N/n\nFutó: B/b\nGyalog: P/p\nfehér gyalogból királynő lesz pl: a8=Q','white')
     t.sleep(1.5)
     cl()
 
@@ -244,7 +244,7 @@ def BasicChess(game_pt: float, already_gave_point: int):
 
         else:
             t.sleep(1)
-            write('Nem helyes megoldás. Sajnos nem sikerült megoldanod ezt a feladványt, de később biztos sikerülni fog!','red')
+            write('Helytelen megoldás. Sajnos nem sikerült megoldanod ezt a feladványt, de később biztosan sikerülni fog!','red')
             cl()
             return game_pt, score
 
@@ -328,7 +328,7 @@ def BasicChess(game_pt: float, already_gave_point: int):
 
         else:
             t.sleep(1)
-            write('Nem helyes megoldás. Sajnos nem sikerült megoldanod ezt a feladványt, de később biztos sikerülni fog!','red')
+            write('Helytelen megoldás. Sajnos nem sikerült megoldanod ezt a feladványt, de később biztosan sikerülni fog!','red')
             cl()
             return game_pt, score
 
@@ -370,7 +370,7 @@ def BasicChess(game_pt: float, already_gave_point: int):
         update_chessboard(chessboard, 'D4', 'Q')
         print_chessboard(chessboard)
         #feladvány
-        write('\nFehér lép, matt 2 lépésben...','white')
+        write('\nFehér lép, adj mattot az ellenségednek 2 lépésben!','white')
         move = input('\nLépés > ')
         if move == 'Qa7' or move == 'QA7':
             print('Helyes lépés!')
@@ -396,11 +396,11 @@ def BasicChess(game_pt: float, already_gave_point: int):
                     return game_pt, score
             
             else:
-                write('Nem helyes megoldás. Sajnos nem sikerült megoldanod ezt a feladványt, de később biztos sikerülni fog!','red')
+                write('Helytelen megoldás. Sajnos nem sikerült megoldanod ezt a feladványt, de később biztosan sikerülni fog!','red')
                 return game_pt, score
 
         else:
-            write('Nem helyes megoldás. Sajnos nem sikerült megoldanod ezt a feladványt, de később biztos sikerülni fog!','red')
+            write('Helytelen megoldás. Sajnos nem sikerült megoldanod ezt a feladványt, de később biztosan sikerülni fog!','red')
             return game_pt, score
 
 
@@ -465,11 +465,11 @@ def BasicChess(game_pt: float, already_gave_point: int):
                     return game_pt, score
                 
                 else:
-                    write('Nem helyes megoldás. Sajnos nem sikerült megoldanod ezt a feladványt, de később biztos sikerülni fog!','red')
+                    write('Helytelen megoldás. Sajnos nem sikerült megoldanod ezt a feladványt, de később biztosan sikerülni fog!','red')
                     return game_pt, score
 
         else:
-            write('Nem helyes megoldás. Sajnos nem sikerült megoldanod ezt a feladványt, de később biztos sikerülni fog!','red')
+            write('Helytelen megoldás. Sajnos nem sikerült megoldanod ezt a feladványt, de később biztosan sikerülni fog!','red')
             return game_pt, score
         
 
@@ -479,7 +479,8 @@ def LuckOrKnowledge(game_pt: float, already_gave_point: int):
     rng1 = r(1,3)
     rng2 = r(1,6)
     rng3 = r(1,8)
-    write('Szia, üdvözöllek az utolsó játékunkban! Itt kiderül, mennyire vagy szerencsés... vagyis mennyire vagy jó valószínüségszámításban. Ez a feladat több körből áll, és a megkell választanod mindegyikre a helyes választást. Ha egyet is elrontasz, a játék véget ér. Sok sikert!\nÜgyelj arra, hogy SORSZÁMOT írsz be!','white')
+    cl()
+    write('Szia, üdvözlünk az utolsó játékunkban! Itt kiderül, mennyire is vagy szerencsés... vagyis mennyire vagy jó valószínüségszámításban. Ez a feladat több körből áll, és mindegyikre helyesen kell válaszolnod! Ha egyet is elrontasz, a játék véget ér. Sok sikert!\nÜgyelj arra, hogy SORSZÁMOT írsz be!','white')
     t.sleep(1)
     cl()
     lvl_1 = int(input('Válassz!\n1 - Alma\n2 - Barack\n3 - Kiwi\n>> '))
@@ -487,7 +488,7 @@ def LuckOrKnowledge(game_pt: float, already_gave_point: int):
         write('Helyes megoldás!','white')
         scorepoint+=1
         cl()
-        lvl_2 = int(input('Dobsz egy dobókockát, hány pöttyöt mutat a kocka? !\n1 - 1\n2 - 2\n3 - 3\n4 - 4\n5 - 5\n6 - 6\n>> '))
+        lvl_2 = int(input('Dobsz egy dobókockával, hányast dobtál vele? !\n1 - 1\n2 - 2\n3 - 3\n4 - 4\n5 - 5\n6 - 6\n>> '))
         if lvl_2 == rng2:
             write('Helyes megoldás!','white')
             scorepoint+=1
@@ -497,7 +498,7 @@ def LuckOrKnowledge(game_pt: float, already_gave_point: int):
                 write('Helyes megoldás!','white')
                 scorepoint+=1
                 cl()
-                lvl_4 = int(input('3 ajtó van, egyik mögött egy ferrari van, a többi mögött semmi. Egyik üres ajtó kinyílik. Mekkora esélyed van, hogy a jó ajtót választod?\n1 - 33%\n2 - 50%\n3 - 66%\n>> '))
+                lvl_4 = int(input('3 ajtó van, egyik mögött egy Ferrari van, a többi mögött semmi. Egyik üres ajtó kinyílik. Mekkora esélyed van, hogy a jó ajtót választod?\n1 - 33%\n2 - 50%\n3 - 66%\n>> '))
                 if lvl_4 == 3:
                     write('Helyes megoldás!','white')
                     scorepoint+=1
@@ -511,16 +512,16 @@ def LuckOrKnowledge(game_pt: float, already_gave_point: int):
                     elif already_gave_point != 1:
                         return game_pt, scorepoint
                 else:
-                    write('Sajnos balszerencsés volt ez, de ne csüggedj, legközelebb sikeresebb leszel.','red')
+                    write('Sajnos most nem volt szerencséd, de ne csüggedj, legközelebb sikerülni fog!','red')
                     return game_pt, scorepoint
             else:
-                write('Sajnos balszerencsés volt ez, de ne csüggedj, legközelebb sikeresebb leszel.','red')
+                write('Sajnos most nem volt szerencséd, de ne csüggedj, legközelebb sikerülni fog!','red')
                 return game_pt, scorepoint 
         else:
-            write('Sajnos balszerencsés volt ez, de ne csüggedj, legközelebb sikeresebb leszel.','red')
+            write('Sajnos most nem volt szerencséd, de ne csüggedj, legközelebb sikerülni fog!','red')
             return game_pt, scorepoint
     else:
-        write('Sajnos balszerencsés volt ez, de ne csüggedj, legközelebb sikeresebb leszel.','red')
+        write('Sajnos most nem volt szerencséd, de ne csüggedj, legközelebb sikerülni fog!','red')
         return game_pt, scorepoint
         
 #credits
