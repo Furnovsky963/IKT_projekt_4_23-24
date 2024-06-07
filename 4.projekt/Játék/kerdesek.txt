@@ -1,4 +1,4 @@
-Melyik évben adták ki az aranybullát?
+Melyik évben adták ki az Aranybullát?
 1222
 1223
 1122
@@ -14,7 +14,7 @@ Melyik Budapest legnagyobb kerülete?
 XVII. kerület (Rákosmente)
 XXII. kerület (Budafok-Tétény)
 XIII. kerület
-Fejezd be a mondatot: "A kutyából nem lesz ..."
+Fejezd be a mondatot: "A kutyából nem lesz ..."!
 ...szalonna.
 ...kolbász.
 ...szalámi.
@@ -38,7 +38,7 @@ Melyik évben jött ki a Windows 7?
 2009.
 2008.
 2010.
-Hogy hívják sakkban azt a szituációt, amikor egy erősebb figura nem tud elmozdulni, mert megakadályozza a királyt, hogy sakkabn legyen?
+Hogy hívják sakkban azt a szituációt, amikor egy erősebb figura nem tud elmozdulni, mert megakadályozza a királyt, hogy sakkban legyen?
 pin
 skewer
 sanc
@@ -46,7 +46,7 @@ Melyik betűt használjuk fájlíráshoz a py-ban?
 'w'
 'r'
 'a'
-Hogyan hivatkozunk a 'eredmeny' osztályra css-ben?
+Hogyan hivatkozunk az 'eredmeny' osztályra css-ben?
 .eredmeny
 #eredmeny
 .eredmény
