@@ -488,7 +488,7 @@ def LuckOrKnowledge(game_pt: float, already_gave_point: int):
         write('Helyes megoldás!','white')
         scorepoint+=1
         cl()
-        lvl_2 = int(input('Dobsz egy dobókockával, hányast dobtál vele? !\n1 - 1\n2 - 2\n3 - 3\n4 - 4\n5 - 5\n6 - 6\n>> '))
+        lvl_2 = int(input('Dobtál egy dobókockával, hányast dobtál vele? !\n1 - 1\n2 - 2\n3 - 3\n4 - 4\n5 - 5\n6 - 6\n>> '))
         if lvl_2 == rng2:
             write('Helyes megoldás!','white')
             scorepoint+=1
@@ -498,7 +498,7 @@ def LuckOrKnowledge(game_pt: float, already_gave_point: int):
                 write('Helyes megoldás!','white')
                 scorepoint+=1
                 cl()
-                lvl_4 = int(input('3 ajtó van, egyik mögött egy Ferrari van, a többi mögött semmi. Egyik üres ajtó kinyílik. Mekkora esélyed van, hogy a jó ajtót választod?\n1 - 33%\n2 - 50%\n3 - 66%\n>> '))
+                lvl_4 = int(input('3 ajtó van, egyik mögött egy Ferrari van, a többi mögött semmi. Az egyik üres ajtó kinyílik. Mekkora esélyed van, hogy a jó ajtót választod?\n1 - 33%\n2 - 50%\n3 - 66%\n>> '))
                 if lvl_4 == 3:
                     write('Helyes megoldás!','white')
                     scorepoint+=1
@@ -526,7 +526,7 @@ def LuckOrKnowledge(game_pt: float, already_gave_point: int):
         
 #credits
 def credits(game_completed, elso_jatek, masodik_jatek, harmadik_jatek):
-    print(f'Infók:\nEnnyire sikerült teljesítened a játékot: {round(game_completed)}%\nJátékos Neved: {név}\nKérdÉsVálasz:\t  - Pontszám: 5/{elso_jatek}\nBasicChess: \t Pontszám: 1/{masodik_jatek}\nLuckOrSkill: \t Pontszám: 4/{harmadik_jatek}\n\nKészítők:\n\tBodolai Richárd - Játékok programozása\n\tBagosi Bence - Játék promóciós weboldalának készítése')
+    print(f'Infók:\nEnnyire sikerült teljesítened a játékot: {round(game_completed)}%\nJátékosneved: {név}\nKérdÉsVálasz:\t  - Pontszám: 5/{elso_jatek}\nBasicChess: \t Pontszám: 1/{masodik_jatek}\nLuckOrSkill: \t Pontszám: 4/{harmadik_jatek}\n\nKészítők:\n\tBodolai Richárd - Játékok programozása\n\tBagosi Bence - Játék promóciós weboldalának készítése')
     back = str(input('\nNyomj ENTER a menübe való visszatéréshez.\n--> '))
     
     while back != "":
