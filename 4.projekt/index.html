@@ -10,7 +10,7 @@
 </head>
 <body>
     <header></header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Jópofa Minigamek</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -36,22 +36,149 @@
         </div>
     </nav>
     <main class="container">
-        <h2 id="bevezeto">Bevezető</h2>
-            <p>Üdvözlünk a "Jópofa Minigamek" oldalán! Itt 3 kisebb, de annál szórakoztatóbb játékkal játszhatsz, amelyek kapcsolódnak cégünkhöz is!</p>
-            <!--Talán lesz itt még egy <p></p>!-->
-        <h2 id="kerdesvalasz">KérdÉsVálasz</h2>
-            <p>Értesz az informatikához és esetleg szeretnél egy kisebb kedvezményt kapni termékeinkből? Válaszolj helyesen 20 kérdésre, és elengedjük egy vásárlásod 5%-át! Sok sikert!</p>
-            <!--Talán lesz itt egy táblázat/felsorolás/egyéb...-->
-            <!--Videó rövid bemutatásra-->
-        <h2 id="chesspuzzle">ChessPuzzle</h2>
-            <p>Gyűjtsd össze a legtöbb gyümölcsöt, anélkül, hogy bárminek nekiütköznél. De vigyázz: az irányított karaktered egyre és egyre hosszabb lesz, nehezebbé téve küldetésedet!</p>
-            <!--Videó rövid bemutatásra-->
-        <h2 id="luckorskill">LuckOrSkill</h2>
-            <p>Idegenek szállták meg a Földet, te pedig nem tudsz mást tenni, mint elfutni előlük. Juss minél messzebbre és kerüld ki az útközben előforduló akadályokat!</p>
-            <!--Videó rövid bemutatásra-->
+        <section class="row">
+            <div class="col-12">
+              <h1 class="my-3 text-center">A Kockáztató Kockák Hálózati Kft.-től: Jópofa Minigamek</h1>
+            </div>
+            <div class="col-12">
+                <h2 id="bevezeto">Bevezető</h2>
+                    <p>Üdvözlünk a <strong>"Jópofa Minigamek"</strong> oldalán! Itt 3 kisebb, de annál szórakoztatóbb játékkal játszhatsz, amelyek kapcsolódnak cégünkhöz is! Légy ügyes, nyerj kedvezményt termékeinkből! Sok szerencsét!</p>
+                    <p>Játékaink, amelyeket ki tudsz próbálni:</p>
+                        <ul>
+                            <li><strong>KérdÉsVálasz</strong> - Mindenféle témából tettünk fel kérdéseket, azokra kell válaszolnod!</li>
+                            <li><strong>ChessPuzzle</strong> - <em>Sakk</em> témájú feladványok; Előnyben a sakkjátékosok!</li>
+                            <li><strong>LuckOrSkill</strong> - Ez már tényleg csak a <em>szerencsén</em> múlik. Vagy mégsem?</li>
+                        </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 my-2">
+                <div class="card h-100 w-100">
+                  <img src="img/kerdojel.jpg" class="card-img-top" alt="KerdEsValasz" title="KerdEsValasz">
+                  <div class="card card-body">
+                <h2 id="kerdesvalasz">KérdÉsVálasz</h2>
+                    <p>Mennyire vagy otthon az informatikában? Esetleg egy kis történelem is belefér? Földrajz? Vagy esetleg más?</p>
+                    <p>Összeválogattunk neked sok-sok kérdést. A játék véletlenszerűen kiválaszt neked 5-öt ezek közül: Válaszolj helyesen mindegyikre és nyerj <em>5%</em> <strong>egyszeri</strong> kedvezményt bármelyik hálózati eszközünkre!</p>
+                    <table class="table table-striped">
+                        <caption>KérdÉsVálasz - Témakörök</caption>
+                        <tr>
+                            <th>Témakör</th>
+                            <th>Kérdések száma</th>
+                        </tr>
+                        <tr>
+                            <td>Történelem</td>
+                            <td>2 db</td>
+                        </tr>
+                        <tr>
+                            <td>Magyarországi földrajz</td>
+                            <td>1 db</td>
+                        </tr>
+                        <tr>
+                            <td>Irodalom</td>
+                            <td>2 db</td>
+                        </tr>
+                        <tr>
+                            <td>Matematika</td>
+                            <td>4 db</td>
+                        </tr>
+                        <tr>
+                            <td>Programozás (HTML, Python, Bootstrap)</td>
+                            <td>10 db</td>
+                        </tr>
+                        <tr>
+                            <td>Egyéb informatikai kérdések</td>
+                            <td>5 db</td>
+                        </tr>
+                        <tr>
+                            <td>Egyéb kérdések</td>
+                            <td>4 db</td>
+                        </tr>
+                    </table>
+                    <video width="100%" height="100%" controls>
+                        <source src="img/elso.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 my-2">
+                <div class="card h-100 w-100">
+                  <img src="img/kiraly_sakk.jpg" class="card-img-top" alt="ChessPuzzle" title="ChessPuzzle">
+                  <div class="card card-body">
+                    <h2 id="chesspuzzle">ChessPuzzle</h2>
+                        <p>Imádsz sakkozni és még jól is megy? Akkor ez a minigame neked lett kitalálva!</p>
+                        <p>Hibakeresésen át 2 lépéses mattadásig bármi előfordulhat! Oldd meg a feladványt helyesen, és mi <em>5%</em> <strong>egyszeri</strong> kedvezménnyel jutalmazunk meg, amelyet bármelyik hálózati eszközünkre felhasználhatsz!</p>
+                        <table class="table table-striped">
+                            <caption>Jelmagyarázat a ChessPuzzle nevű játékhoz</caption>
+                            <tr>
+                                <th>Bábu típusa</th>
+                                <th colspan="2">Játékos színe</th>
+                                <th>Jelölés</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td rowspan="7">Fehér</td>
+                                <td rowspan="7">Fekete</td>
+                                <td>NAGYBETŰS/kisbetűs</td>
+                            </tr>
+                            <tr>
+                                <td>Király</td>
+                                <td>K/k</td>
+                            </tr>
+                            <tr>
+                                <td>Királynő</td>
+                                <td>Q/q</td>
+                            </tr>
+                            <tr>
+                                <td>Bástya</td>
+                                <td>R/r</td>
+                            </tr>
+                            <tr>
+                                <td>Huszár</td>
+                                <td>N/n</td>
+                            </tr>
+                            <tr>
+                                <td>Futó</td>
+                                <td>B/b</td>
+                            </tr>
+                            <tr>
+                                <td>Gyalog</td>
+                                <td>P/p</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">Átalakuló bábu esetén:</td>
+                                <td>Pl. a8=Q (a8-as mezőn levő fehér bábu királynő lesz)</td>
+                            </tr>
+                        </table>
+                        <video width="100%" height="100%" controls>
+                            <source src="img/masodik.mp4" type="video/mp4">
+                        </video>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 my-2">
+                <div class="card h-50 w-100">
+                  <img src="img/lohere.jpg" class="card-img-top" alt="LuckOrSkill" title="LuckOrSkill">
+                  <div class="card card-body">
+                    <h2 id="luckorskill">LuckOrSkill</h2>
+                        <p>A LuckOrSkill nevű játékunkban csak a szerencsédre számíthatsz. De akár az is segíthet, ha jó vagy valószínűségszámításban.</p>
+                        <p>4 kérdésre kell tippelned, és ha elég szerencsés vagy, <em>5%</em> <strong>egyszeri</strong> kedvezményt nyerhetsz bármelyik hálózati eszközünkre!</p>
+                        <video width="100%" height="100%" controls>
+                            <source src="img/harmadik.mp4" type="video/mp4">
+                        </video>
+                  </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="container-fluid">
-        <!--Tagok leírása-->
+    <footer class="text-light container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <p>A projekt aktív tagjai voltak a Kockáztató Kockák csapatának tagjai:</p>
+                    <ul>
+                        <li>Bagosi Bence - Csapatkapitány, a weboldal készítője</li>
+                        <li>Bodolai Richárd Tamás - A Jópofa Minigamek játék(ok) alkotója</li>
+                    </ul>
+                <p>Készült 2024-ben... NJIT</p>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
