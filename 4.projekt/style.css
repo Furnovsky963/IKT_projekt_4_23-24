@@ -1,0 +1,51 @@
+body{
+    background-color:lightblue;
+}
+header{
+    height:400px;
+    background-image:url(img/halozat.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:top;
+}
+.navbar,footer{
+    background-color:cadetblue;
+}
+h1{
+    color:rgb(103,150,211);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    text-transform:uppercase;
+    border-top:3px solid cadetblue;
+    border-bottom:3px solid cadetblue;
+}
+h2{
+    text-align:center;
+    color:rgb(150,180,240);
+    letter-spacing:1.5px;
+    font-weight:bold;
+    margin:3px;
+}
+p{
+    text-align:justify;
+    text-indent:10px;
+    font-size:1.05em;
+    margin-top:3px;
+}
+ul{
+    list-style-type:square;
+}
+.card{
+    background-color:cadetblue;
+}
+.card-img-top{
+    height:30%;
+    width:50%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+footer{
+    font-weight:bold;
+}
